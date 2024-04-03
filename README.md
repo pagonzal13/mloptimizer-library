@@ -50,7 +50,7 @@ You can get more information about the package installation at https://pypi.org/
 
 ### [!WARNING] Important Note for Windows Users
 
-If you're using Windows and encounter an error "error: invalid path mloptimizer/aux/[file_name].py" when cloning or updating the repository, it may be due to the use of reserved file names, such as "aux", by Git.
+If you're using Windows and any mloptimizer version <0.9.0, you may encounter an error "error: invalid path mloptimizer/aux/[file_name].py" when cloning or updating the repository, it may be due to the use of reserved file names, such as "aux", by Git.
 
 This issue arises because Windows operating system reserves certain file names that may be legal in Linux or macOS but illegal in Windows.
 
