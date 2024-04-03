@@ -48,6 +48,27 @@ pip install mloptimizer
 
 You can get more information about the package installation at https://pypi.org/project/mloptimizer/.
 
+### [!WARNING] Important Note for Windows Users
+
+If you're using Windows and encounter an error "error: invalid path mloptimizer/aux/[file_name].py" when cloning or updating the repository, it may be due to the use of reserved file names, such as "aux", by Git.
+
+This issue arises because Windows operating system reserves certain file names that may be legal in Linux or macOS but illegal in Windows.
+
+To resolve this issue, you can configure Git to ignore NTFS naming restrictions by running the following command:
+
+```bash
+git config --global core.protectNTFS false
+```
+
+However, please be cautious when disabling this setting, as it may expose you to potential security risks. Depending on the file name causing the issue, turning off protectNTFS may or may not resolve the error.
+
+Once you've completed the clone or pull operation, it's recommended to revert the protectNTFS setting to its default value to ensure the security of your system. You can do this by running:
+
+```bash
+git config --global core.protectNTFS true
+```
+
+We apologize for any inconvenience caused by this issue and thank you for your understanding. If you encounter any further difficulties or have any questions, please don't hesitate to reach out to us.
 
 ### Quickstart
 
